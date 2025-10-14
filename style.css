@@ -25,3 +25,115 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+  
+/* Логотип */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Контейнер справа */
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* Ссылки */
+.aHeader {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.aHeader:hover {
+    color: #00bfff;
+    transform: scale(1.05);
+}
+
+/* Кнопки языка */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn {
+    width: 28px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    transition: transform 0.2s;
+}
+
+#am { background-image: url("flags/am.png"); }
+#ru { background-image: url("flags/ru.png"); }
+#en { background-image: url("flags/en.png"); }
+
+.lang-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Бургер */
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* 📱 Адаптив */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #181818;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  
+    .right-side {
+      gap: 10px;
+    }
+  
+    .lang-switch {
+      gap: 6px;
+    }
+}
