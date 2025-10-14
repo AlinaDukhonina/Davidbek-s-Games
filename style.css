@@ -138,3 +138,56 @@ header {
     }
 }
 
+.contact-section {
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    background: none; /* фон убран */
+  }
+  
+  .contact-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Иконки в колонку */
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-left: 40px;
+  }
+  
+  
+  /* Ссылки */
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #000; /* чёрный текст */
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+  }
+  .contact-link i {
+    font-size: 1.6rem;
+    color: #000; /* иконка тоже чёрная */
+  }
+  .contact-link:hover {
+    transform: translateX(5px);
+  }
+  .contact-link:hover i {
+    color: #464646;
+  }
+  
+  /* 📱 Мобильная адаптация (по сути почти та же, просто чуть меньше иконки) */
+  @media (max-width: 600px) {
+    .contact-link {
+      font-size: 1.6rem;
+    }
+  }
+  
