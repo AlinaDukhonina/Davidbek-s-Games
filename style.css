@@ -68,7 +68,7 @@ header {
 }
 
 .aHeader:hover {
-    color: #00bfff;
+    color: #ffcc00;
     transform: scale(1.05);
 }
 
@@ -137,3 +137,4 @@ header {
       gap: 6px;
     }
 }
+
