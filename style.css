@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+a {
+    text-decoration: none;
+}
+
+.aHeader {
+    color: white;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+}
