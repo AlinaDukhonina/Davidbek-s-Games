@@ -145,25 +145,25 @@ header {
     background: none; /* фон убран */
   }
   
-  .contact-section h3 {
+.contact-section h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 600;
     letter-spacing: 1px;
-  }
+}
   
-  /* Иконки в колонку */
-  .contact-icons {
+/* Иконки в колонку */
+.contact-icons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
     margin-left: 40px;
-  }
+}
   
   
-  /* Ссылки */
-  .contact-link {
+/* Ссылки */
+.contact-link {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -172,22 +172,143 @@ header {
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
-  }
-  .contact-link i {
+}
+.contact-link i {
     font-size: 1.6rem;
     color: #000; /* иконка тоже чёрная */
-  }
-  .contact-link:hover {
+}
+.contact-link:hover {
     transform: translateX(5px);
-  }
-  .contact-link:hover i {
+}
+.contact-link:hover i {
     color: #464646;
-  }
+}
   
-  /* 📱 Мобильная адаптация (по сути почти та же, просто чуть меньше иконки) */
-  @media (max-width: 600px) {
+/* 📱 Мобильная адаптация (по сути почти та же, просто чуть меньше иконки) */
+@media (max-width: 600px) {
     .contact-link {
       font-size: 1.6rem;
     }
+}
+
+#ourTeam {
+    margin-bottom: 50px;
+    text-align: center;
   }
-  
+
+  #ourTeam h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .TeamCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .Team {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .TeamImage {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+
+  /* 📱 Мобильная адаптация */
+  @media (max-width: 768px) {
+    .TeamCards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Team {
+      width: 90%;
+      margin-left: 0;
+      padding: 12px;
+    }
+
+    .TeamImage {
+      height: 180px;
+    }
+
+    #ourTeam h3 {
+      font-size: 24px;
+    }
+  }
+
+.gameLinksTotal {
+  display: flex;
+}
+
+/* Общий стиль игровых ссылок */
+.gameLinks {
+  color: #ffffff;
+  background: linear-gradient(135deg, #111 0%, #222 100%);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.3px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease-in-out;
+}
+
+.gameLinks:hover {
+  color: #000;
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.gameLinks:active {
+  transform: scale(0.97);
+}
+
+/* Кнопка доната */
+.donate {
+  color: #ffffff;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 15px 45px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.donate:hover {
+  color: #000;
+  background: linear-gradient(135deg, #ffffff 0%, #e5e5e5 100%);
+  border-color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.donate:active {
+  transform: scale(0.97);
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
